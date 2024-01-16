@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/xx"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_your_age"
+        android:layout_margin="8dp"
+        android:textColor="@color/col1"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-16dp"
+        android:text="@string/min_hr_day"
+        android:textColor="@color/col1"
+        android:textStyle="italic"
+        android:textSize="16sp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etName"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/col1"
+        android:gravity="center"
+        android:hint="@string/name"
+        android:textColorHint="@color/col2"
+        android:inputType="textCapWords"
+        android:padding="10dp"
+        android:background="@drawable/input_style"/>
+
+    <Button
+        android:id="@+id/btnDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_db"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/col3"
+        android:textSize="20sp"
+        android:backgroundTint="@color/col1"/>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="32dp"
+        android:textColor="@color/col1"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/col2"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/col1"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:backgroundTint="@color/col4"/>
+
+
+</LinearLayout>
